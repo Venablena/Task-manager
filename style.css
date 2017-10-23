@@ -1,0 +1,41 @@
+main {
+  max-width: 800px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(300px, auto);
+  margin: auto;
+}
+
+header {
+  grid-column: 1 / 4;
+  grid-row: 1;
+  /*display: flex;
+  flex-direction: row;*/
+  background-color: grey;
+  padding: 3rem;
+}
+
+.date, .quote {
+  width: 100%;
+  background-color: pink;
+}
+
+.yesterday, .today, .stretch {
+  grid-row: 2;
+  margin: 1rem 1rem 1rem 0rem;
+  border-color: lime;
+}
+
+.yesterday {
+  grid-column: 1;
+}
+
+.today  {
+  grid-column: 2;
+}
+
+.stretch {
+  grid-column: 3;
+  margin-right: 0;
+}
